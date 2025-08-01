@@ -15,15 +15,21 @@ body{
     background-attachment: fixed;
 }
 
-.hero-text{
+.hero-text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;   /* Alinea al fondo */
-    align-items: flex-end;       /* Alinea a la derecha */
+    justify-content: flex-start;   /* Alinea arriba */
+    align-items: flex-end;         /* Alinea a la derecha */
     color: white;
     text-align: right;
-    height: 90vh;               /* Ocupa toda la altura de la pantalla */
-    padding: 2rem;               /* Espacio desde el borde */
+    height: 90vh;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 10;
+     /* Aumenta el espacio abajo para separar de la flecha */
 }
 
 .hero-text p{
@@ -45,7 +51,9 @@ body{
 .hero-text {
     animation: slideInRight 2s ease-out;
 }
-
+.caja{
+    height: 450px;
+}
 .form {
     display: flex;
     flex-direction: column;
