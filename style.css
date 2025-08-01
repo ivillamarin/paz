@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*---- RESET------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./imagen/luna.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   /* Alinea al fondo */
+    align-items: flex-end;       /* Alinea a la derecha */
+    color: white;
+    text-align: right;
+    height: 90vh;               /* Ocupa toda la altura de la pantalla */
+    padding: 2rem;               /* Espacio desde el borde */
+}
+
+.hero-text p{
+    font-size: 1.3rem;
+    margin: 0.5rem 0;   
+    font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif; /* Usa las fuentes importadas de Google Fonts */
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-text {
+    animation: slideInRight 2s ease-out;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 270px;
+    margin: 80px auto 0 auto; /* Aumenta el espacio arriba para separar de la flecha */
+    position: static;
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif; /* Usa las fuentes importadas de Google Fonts */
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.botones button {
+    background-color: #161616; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.botones button:hover {
+    background-color: #f4f6f4;
+    color: black; /* Verde más claro al pasar el mouse */
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 300;
+    animation: slideInDown 1.5s ease-out;
+}
+
+.otro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   /* Alinea al fondo */
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 90vh;                /* Ocupa toda la altura de la pantalla */
+    padding: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: slideInUp 1.5s ease-out;
+    z-index: 10;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.otro-text p {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;   
+    font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif; /* Usa las fuentes importadas de Google Fonts */
+    font-weight: 300; /* Hace la letra más fina */
+}
+
