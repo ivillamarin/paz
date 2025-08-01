@@ -52,7 +52,7 @@ body{
     animation: slideInRight 2s ease-out;
 }
 .caja{
-    height: 450px;
+    height: 650px;
 }
 .form {
     display: flex;
@@ -81,7 +81,9 @@ body{
     width: 100%;
 }
 
-.botones button {
+.botones a {
+    text-decoration: none;
+    font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif;
     background-color: #161616; /* Verde */
     border: none;
     color: white;
@@ -95,7 +97,7 @@ body{
     border-radius: 12px;
 }
 
-.botones button:hover {
+.botones a:hover {
     background-color: #f4f6f4;
     color: black; /* Verde más claro al pasar el mouse */
 }
