@@ -205,7 +205,11 @@ h3 {
         margin-right: 1rem;
         animation: none;
     }
-
+    .hero-text,
+    h3,
+    .otro-text {
+        animation: slideInRight 2s ease-out;
+    }
     .otro-text {
         height: auto;
         padding: 1rem;
